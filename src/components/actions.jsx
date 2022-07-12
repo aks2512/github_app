@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types';
 
-export const Actions = ({ handleRepos, handleStarred }) => (
+export const Actions = ({ getRepos, getStarred }) => (
     <div className="actions">
       <button
-        onClick={handleRepos}
+        onClick={getRepos}
       >Ver repositórios</button>
       <button
-        onClick={handleStarred}
+        onClick={getStarred}
       >Ver favoritos</button>
     </div>
 );
 
 Actions.propTypes = {
-  handleRepos: PropTypes.func.isRequired,
-  handleStarred: PropTypes.func.isRequired,
+  getRepos: PropTypes.func.isRequired,
+  getStarred: PropTypes.func.isRequired,
 }
